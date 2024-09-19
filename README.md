@@ -9,7 +9,7 @@
 - This environment will consist of public and private subnets, ensuring secure and efficient network communication.
 ---
 ### Architecture Used in this Guide:
-![image](https://github.com/user-attachments/assets/c17eb913-eb56-4c7e-a94b-a80224d8be80)
+![image](https://docs.aws.amazon.com/images/vpc/latest/userguide/images/public-nat-gateway-diagram.png)
 
 ##### Below are detailed steps for creating each component in a Virtual Private Cloud (VPC) for hosting an EC2 server in AWS:
 ---
