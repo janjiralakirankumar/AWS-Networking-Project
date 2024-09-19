@@ -9,7 +9,7 @@
 - This environment will consist of public and private subnets, ensuring secure and efficient network communication.
 ---
 ### Architecture Used in this Guide:
-![image](https://github.com/janjiralakirankumar/Networking-Env-AWS/assets/137407373/d1473786-36ed-4fe4-ae98-24726d2311ae)
+![image](https://github.com/user-attachments/assets/c17eb913-eb56-4c7e-a94b-a80224d8be80)
 
 ##### Below are detailed steps for creating each component in a Virtual Private Cloud (VPC) for hosting an EC2 server in AWS:
 ---
