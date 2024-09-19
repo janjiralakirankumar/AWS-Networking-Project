@@ -138,7 +138,7 @@ For the bastion host (public instance), create a security group allowing SSH (po
 - Create a new SSH key pair with name as `Demo-KeyPair-YourName` and select the format as `.pem`to ensure secure access to the instance and click on `Create key pair`
 - In the `Network settings` section click on `Edit`
   - Select the VPC you created in Step 2.
-  - Choose the `Public Subnet-2` you created in Step 3.
+  - Choose the `Public Subnet-1` you created in Step 3.
   - Enable `Auto-assign Public IP` to allow the instance to have a public IP address.
 - Under `Firewall (security groups)` section, choose `Select an existing security group` and choose the `Public security group` you created in Step 6.
 - Under `Configure Storage` ensure it to 8 GiB,
@@ -147,7 +147,7 @@ For the bastion host (public instance), create a security group allowing SSH (po
 ### Step 8: Test the Connection
 
 - Once the instance is changed to running state, connect to it using either `Connect` Option in AWS Console (or) SSH using SSH Client using the same key pair.
-- Test the internet connectivity by running commands like `ping google.com` (or) accessing external websites using `curl` or `wget`.
+- Test the internet connectivity by running commands like `sudo apt update` (or) `ping google.com` (or) accessing external websites using `curl` or `wget`.
 - Once verified close the Terminal Tab.
 
 ### By this we have successfully established Internet connection with Public Server-1.
@@ -173,7 +173,7 @@ For the private instance, create a security group that allows SSH access only fr
 - Select the same existing SSH key pair created in Step 7 to ensure secure access to the private instance.
 - In the `Network settings` section, click on `Edit`:
   - Select the VPC created in Step 2.
-  - Choose the `Private Subnet-1` created in Step 3.
+  - Choose the `Private Subnet-2` created in Step 3.
   - Ensure to `Disable` Auto-assign Public IP.
 - Under `Firewall (security groups)` section, choose `Select an existing security group` and choose the `Private security group` you created in Step 9.
 - Under `Configure Storage` ensure it to 8 GiB,
@@ -184,7 +184,7 @@ For the private instance, create a security group that allows SSH access only fr
 - In the AWS Management Console, navigate to the VPC service.
 - Select `NAT Gateways` from the sidebar and click `Create NAT Gateway.`
 - Provide the name, e.g., `NAT-Gateway-YourName`
-- Choose `Public Subnet-1` for your NAT Gateway.
+- Choose `Public Subnet-2` for your NAT Gateway.
 - Under `Elastic IP allocation ID,` click `Allocate Elastic IP` to assign a public IP address to the NAT Gateway.
 - Click `Create NAT Gateway.`
 ---
