@@ -132,8 +132,8 @@ For the bastion host (public instance), create a security group allowing SSH (po
 ---
 ### Step 7: Launching a Public EC2 Instance in Public Subnet.
 
-- In the EC2 Dashboard, click `Launch Instance.` and give Name and Tags as `Demo-Public-Server-01`
-- Ensure the Amazon Machine Image (AMI) as `Amazon Linux 2`
+- In the EC2 Dashboard, click `Launch Instance.` and give Name and Tags as `Demo-Public-Server-01-YourName`
+- Ensure the Amazon Machine Image (AMI) as `Ubuntu Server 24.04`
 - Ensure the instance type as `t2.micro`
 - Create a new SSH key pair with name as `Demo-KeyPair-YourName` and select the format as `.pem`to ensure secure access to the instance and click on `Create key pair`
 - In the `Network settings` section click on `Edit`
@@ -167,8 +167,8 @@ For the private instance, create a security group that allows SSH access only fr
 ---
 ### Step 10: Launching a Private EC2 Instance in Private Subnet
 
-- In the EC2 Dashboard, click `Launch Instance` and give it a name and tags, e.g., `Demo-Private-Server-01`
-- Choose an Amazon Machine Image (AMI) such as `Amazon Linux 2.`
+- In the EC2 Dashboard, click `Launch Instance` and give it a name and tags, e.g., `Demo-Private-Server-01-YourName`
+- Choose an Amazon Machine Image (AMI) such as `Ubuntu Server 24.04.`
 - Configure the instance type as `t2.micro.`
 - Select the same existing SSH key pair created in Step 7 to ensure secure access to the private instance.
 - In the `Network settings` section, click on `Edit`:
