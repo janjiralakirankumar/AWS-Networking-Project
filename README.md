@@ -96,9 +96,7 @@ In Console verify that the subnets are created.
 - In the `Routes` tab, click on Edit routes, add a route for `0.0.0.0/0` pointing to the `Internet Gateway` created in Step 4.
 - Click `Save changes`
 
-#### Task-3: Now, associate the Public Route table with the Public subnets and Private Route table with the Private subnets:
-
-#### Task-4: Enable Auto Assign Public IP, Subnet Association For the Subnets (Public-Subnet-1,2 and Private-Subnet-1,2):
+#### Task-3: Enable Auto Assign Public IP, Subnet Association For the Subnets (Public-Subnet-1,2 and Private-Subnet-1,2):
 
 - In the VPC Dashboard, click on `subnets`
 - Select `Public-Subnet-1.`
