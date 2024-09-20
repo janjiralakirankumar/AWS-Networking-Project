@@ -75,6 +75,8 @@ In Console verify that the subnets are created.
 ---
 ### Step 5: Configure Route Tables
 
+#### Task-1
+
 **Create a Public Route Table:**
 - In the VPC Dashboard, click on `Route tables`
 - Click `Create Route Table.`
@@ -88,15 +90,15 @@ In Console verify that the subnets are created.
 - Choose the same VPC.
 - Click `Create.`
 
-**Associate Route Tables:**
+#### Task-2: Associate Route Tables:
 
 - After creating both route tables, click on the `Public-Route-Table`
 - In the `Routes` tab, click on Edit routes, add a route for `0.0.0.0/0` pointing to the `Internet Gateway` created in Step 4.
 - Click `Save changes`
 
-Now, associate the route tables with the subnets you want:
+#### Task-3: Now, associate the Public Route table with the Public subnets and Private Route table with the Private subnets:
 
-#### For the Public Subnets (Public-Subnet-1 and Public-Subnet-2):
+#### Task-4: Enable Auto Assign Public IP For the Public Subnets (Public-Subnet-1 and Public-Subnet-2):
 
 - In the VPC Dashboard, click on `subnets`
 - Select `Public-Subnet-1.`
