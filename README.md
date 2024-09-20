@@ -98,7 +98,7 @@ In Console verify that the subnets are created.
 
 #### Task-3: Now, associate the Public Route table with the Public subnets and Private Route table with the Private subnets:
 
-#### Task-4: Enable Auto Assign Public IP For the Public Subnets (Public-Subnet-1 and Public-Subnet-2):
+#### Task-4: Enable Auto Assign Public IP, Subnet Association For the Subnets (Public-Subnet-1,2 and Private-Subnet-1,2):
 
 - In the VPC Dashboard, click on `subnets`
 - Select `Public-Subnet-1.`
