@@ -199,26 +199,26 @@ For the private instance, create a security group that allows SSH access only fr
 - First, connect to the bastion host (public instance) as explained in Step 8.
 - From the bastion host, you can SSH into the private instance using its private IP address:
     ```
-    ssh -i `Demo-KeyPair.pem` ec2-user@xx.xxx.xx.xx
+    ssh -i Demo-KeyPair-YourName ubuntu@xx.xxx.xx.xx
     ```
 
 #### Note: 
 
 - If it says `Permission Denied` this means that the Private Key file is not available in the Bastian host.
 - To create a Private Key file follow below steps:
-  1. First create a File with the same name as `Demo-KeyPair-YourName.pem`
+  1. First create a File with the same name as `Demo-KeyPair-YourName`
     ```
-    vi Demo-KeyPair-YourName.pem
+    vi Demo-KeyPair-YourName
     ```
   2. Once this created and opened then go to your local Downloads and open the `Demo-KeyPair-YourName.pem` and copy the Key without any extra charecters and paste it in this new file.
   3. To save the file use Press `Esc` and then enter `:wq!` and press enter.
   4. Change the File permissions to get access to use.
     ```
-    chmod 400 Demo-KeyPair-YourName.pem
+    chmod 400 Demo-KeyPair-YourName
     ```
   5. Now again try to connect to Private Instance from Bastianhost.
     ```
-    ssh -i `Demo-KeyPair-YourName.pem` ec2-user@xx.xxx.xx.xx
+    ssh -i Demo-KeyPair-YourName ubuntu@xx.xxx.xx.xx
     ```
 - Once connected, cross check the private IP.
 - Now, `ping google.com` or `ping facebook.com` then it should work.
